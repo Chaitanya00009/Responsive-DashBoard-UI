@@ -1,0 +1,737 @@
+html, body {
+    background-color: rgb(230, 226, 226);
+    font-family: 'short stack', cursive;
+    width:100%;
+    /* margin:0; */
+    padding: 0;
+    overflow-x: hidden;
+    scroll-padding-top: 1em;
+    scroll-behavior: smooth;
+}
+
+  h1{
+    font-size: 1vw;
+  }
+  
+  
+
+#dashboard_application{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#navigation_page{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90vh;
+    border-radius: 3em;
+    background-color: black;
+    padding: 1em;
+    row-gap: 0.8em;
+    position: fixed;/*Changed this from sticky cuz the nav bar is not being static placed when I have disabled the x- scroll*/
+    top: 1em;
+    margin: 0; /*Added this*/
+    width: 16%;/*Added this*/
+}
+
+
+#navigation_page .text{
+    font-size: 1.5vw;
+}
+
+/* This is for the placement of icon and text */
+#menu a, #tag a, #user a, #schedule a, #contact a {
+    color: white;
+    display: flex;
+    align-items: center; /* Align icons and text vertically */
+    gap: 1em; /* Add spacing between icon and text */
+    text-decoration: none;
+}
+
+/* .icon{
+    color: white;
+    display: inline-block;
+} */
+
+.icon:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.text{
+    color: white;
+}
+
+.text::first-letter{
+    font-size: 1.2em;
+
+}
+
+
+
+
+#menu a:hover .icon,
+#tag a:hover .icon,
+#user a:hover .icon,
+#schedule a:hover .icon,
+#contact a:hover{
+    color: gold;
+}
+
+#user_image{
+    width:5em;
+    height: 5em;
+    border: 1px solid white;
+    border-radius: 5em;
+    background-color: white;
+}
+
+#user_image img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+
+#user_pic{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+#main_page h1{
+    font-size: 180%;
+}
+
+#meeting_heading h1{
+    font-size: 2vw;
+}
+
+#meeting_content h2{
+    font-size: 1.5vw;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:20px;  HERE*/ 
+    padding:1em;
+    font-family: cursive;
+}
+
+#main_page h1 {
+    transition: transform 0.3s ease; 
+}
+
+#main_page:hover h1 {
+    transform: scale(1.2); 
+}
+
+
+.large-letter {
+    font-size: 1.5em; /* Adjust the size as needed */
+}
+
+#search{
+    border: 1px black solid;
+    /* border-radius: 5px; HERE */
+    border-radius: 0.5em;
+    outline: none;
+}
+
+#search:active,
+#search:focus,
+#search:hover {
+    /* border: 1.5px solid green; */
+    border: 0.1em solid green;
+}
+
+
+/* setting dashboard parameters */
+
+
+
+    #dashboard{
+        font-family: 'syne-mono-regular';
+        width: 85%;
+        /* height: 37em; */
+        max-height: 400px;
+        margin-left: 4em;
+        /* margin-right:10px; HERE */
+        margin-right:0.5em;
+        margin-top: 0px;
+        border: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* border-radius: 30px; HERE*/
+        border-radius: 2em;
+    }
+
+#dashboard_content{
+    /* margin-left: 3em; HERE */
+    margin-left: 2em;
+    margin-top:0.3em ;
+}
+
+#dashboard_content h2::first-letter{
+    font-size: 1.5em;
+}
+#dashboard_content h2,
+#dashboard_content h4 {
+    margin: 0;
+    /* margin-bottom: 10px; HERE  */
+    margin-bottom: 0.5em;
+}
+
+
+
+#dashboard_graph {
+    width: 100%; /* Full width of the container */
+    height: 30em; 
+    overflow: hidden; 
+}
+
+#dashboard_graph img {
+    /* width: 100%;  */
+    width: 100%;
+    height: 100%; 
+    object-fit: contain; 
+    
+    object-position: bottom ;
+}
+
+#dashboard_data{
+    /* display: grid; HERE */
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4, 1fr);  HERE*/
+    /* margin: 50px; HERE */
+    margin: 2.5em;
+    gap: 1em;
+    
+    
+}
+
+#dashboard_data p{
+    font-size: 1.3vw;
+}
+
+.data_icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.data_card1{
+    background-color: rgb(181, 246, 181);
+}
+
+.data_card2{
+    background-color: rgb(246, 207, 192);
+}
+
+.data_card3{
+    background-color: rgb(245, 189, 245);
+}
+
+.data_card4{
+    background-color: rgb(174, 174, 249);
+}
+
+.data_card1,
+.data_card2,
+.data_card3,
+.data_card4{
+    /* border: 1px solid black; */
+    padding: 0.5em;
+    border-radius: 1em;
+    font-family:'syne-mono-regular';
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1em;
+    width: 20%;
+}
+
+.data_card1:hover,
+.data_card2:hover,
+.data_card3:hover,
+.data_card4:hover{
+    background: radial-gradient(circle , rgb(224, 141, 141), rgb(144, 144, 231)  );
+}
+
+.largest-letter{
+    font-size: 1.5em;
+    text-underline-offset: 0.2em;
+}
+
+.interaction_heading{
+    font-family:'short stack';
+}
+
+
+
+
+.user_table{
+    width: 100%;
+    margin: 2em;
+    margin-left: 5em;
+}
+
+.user_table table{
+    width: 83%;
+    border-collapse: collapse;
+    text-align: center;  
+}
+
+.user_table th, td{
+    height: 3em;
+}
+
+.user_table th{
+    background-color: rgba(106, 105, 105, 0.751);
+}
+
+.user_table tr:nth-child(even){
+    background-color: white;
+}
+
+.user_table tr:nth-child(odd){
+    background-color: rgb(219, 216, 216);
+}
+
+.user_table table tr:first-child {
+    font-size: 1.8em; /* Adjust this size as needed */
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.user_table table tr:last-child td:first-child{
+    /* border-bottom-left-radius: 20px; HERE */
+    border-bottom-left-radius: 1.5em;
+}
+
+.user_table table tr:last-child td:last-child{
+    /* border-bottom-right-radius: 20px; HERE */
+    border-bottom-right-radius: 1.5em;
+}
+
+
+
+#schedule_meeting{
+    width: 80%;
+    /* border: 1px black solid; */
+    background-color: white;
+    /* margin-left: 105px;HERE */
+    margin-left: 5em;
+    /* padding: 20px;HERE */
+    padding: 1em;
+    /* height: 400px;HERE */
+    height: 25em;
+    /* border-radius: 30px; HERE */
+    border-radius: 2em;
+    overflow-y: scroll;
+    /* margin-top: 100px;HERE */
+    margin-top: 5em;
+}
+
+#meeting_heading{
+    display: flex;
+    justify-content: space-between;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+}
+
+.meet1_box,
+.meet2_box,
+.meet3_box,
+.meet4_box,
+.meet5_box,
+.meet6_box,
+.meet7_box,
+.meet8_box
+{
+    width:5px;
+    height:auto;
+    /* border: black solid 1px; */
+    /* margin: 10px;HERE */
+    margin: 1em;
+    /* margin-top: -5px;HERE */
+    margin-top: -0.2em;
+    /* border-radius: 5px;HERE */
+    border-radius: 0.25em;
+}
+
+.meet1_box,
+.meet5_box{
+    background-color: rgb(103, 219, 103);
+}
+
+.meet2_box,
+.meet6_box{
+    background-color: rgb(84, 84, 246);
+}
+
+.meet3_box,
+.meet7_box{
+    background-color: rgb(237, 93, 93);
+}
+
+.meet4_box,
+.meet8_box{
+    background-color: rgb(245, 201, 121);
+}
+
+#meet1,
+#meet2,
+#meet3,
+#meet4,
+#meet5,
+#meet6,
+#meet7,
+#meet8{
+    display: flex;
+    flex-direction: row;
+    /* margin: 10px;HERE */
+    margin: 0.4em;
+    
+}
+
+#schedule_meeting p{
+    color: rgb(167, 161, 161);
+}
+
+.medium_sized_letter{
+    font-size: 1.2em;
+}
+
+#contact_details_heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin-top:50px; HERE */
+    margin-top: 4em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#contact_details_content{
+    width:85%;
+    /* border: black solid 1px; */
+    /* margin-left: 100px;HERE */
+    margin-left: 5em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+}
+
+#contact_details_map{
+    border: 0.1em rgb(181, 172, 172) solid;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: white;
+    /* border-radius: 40px;HERE */
+    border-radius: 1.5em;
+}
+
+#content_details_feedback{
+    border: 0.1em rgb(159, 159, 162) solid;
+    margin-left: 20px;
+    background-color: white;
+    /* border-radius: 40px;HERE */
+    border-radius: 1.5em;
+}
+
+#content_details_feedback_content input,
+#content_details_feedback_content textarea,
+#content_details_feedback_content button
+{
+    width: 80%;
+    margin-left: 9%;
+    margin-bottom: 2%;
+    border: 0.1em rgb(145, 140, 140) solid;
+    /* border-radius: 5px;HERE */
+    border-radius: 0.8em;
+}
+
+#content_details_feedback_content input:hover,
+#content_details_feedback_content input:active,
+#content_details_feedback_content input:focus{
+    border: 0.15em green solid;
+    outline: none;
+}
+
+#content_details_feedback_content textarea:hover,
+#content_details_feedback_content textarea:active,
+#content_details_feedback_content textarea:focus{
+    border: 0.15em green solid;
+    outline:none;
+}
+
+#content_details_feedback_content textarea::placeholder{
+    /* text-align: left;
+    vertical-align: top; */
+    line-height: 2em;
+    font-size: large;
+}
+
+#content_details_feedback_content button{
+    background-color: rgb(80, 244, 80);
+}
+
+#content_details_feedback_content button:hover,
+#content_details_feedback_content button:active,
+#content_details_feedback_content button:focus{
+    cursor: pointer;
+    background-color: green;
+}
+
+#socials{
+    width: 90%;
+    height: 6em;
+    /* border:1px black solid; */
+    background-color: black;
+    /* margin-top: 30px;HERE */
+    margin-top: 2em;
+    /* margin-left: 80px;HERE */
+    margin-left: 4em;
+    /* display: flex;
+    justify-content: center;*/
+}
+
+#socials_img{
+    display: flex;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+#socials_img img{
+    /* width: 30px;HERE */
+    width: 2em;
+    /* padding: 10px;HERE */
+    padding:0.5em;
+}    
+
+
+#socials_img img:hover{
+    transform: scale(1.3);
+}
+
+#socials_img img{
+    transition: transform 0.3s ease ;
+}
+
+#nav_page_tab_mobile{
+    width: 100%;
+    height: 5em;
+   background-color: black;
+}
+#usr{
+    width: 5em;
+    height: 3.5em;
+    /* background-color: white; */
+    border: 1px solid black;
+    padding-right: 2%;
+}
+#usr img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#usr p{
+    color: white;
+    margin-top: -0.2em;
+}
+#links{
+    width: 100%;
+}
+
+#links a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width:1000px) {
+    #nav_page_tab_mobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 1000px){
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        scroll-padding-top: 6.8em;
+        /* box-sizing: border-box;  */
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    
+    #dashboard_application{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top{
+        margin-top: 5.5em;
+    }
+    
+    #navigation_page{
+        display:none;
+    }
+
+    #nav_page_tab_mobile{
+        padding: 2%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    #links{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    #socials{
+        margin: 0px;
+        width:100%;
+        height: auto;
+        margin-top: 1em;
+    }
+
+}
+
+@media screen and (max-width:568px) {
+
+    html, body{
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        scroll-padding-top: 10%;
+    }
+    #navigation_page{
+        display:none;
+    }
+
+    
+
+    #dashboard_application{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #nav_page_tab_mobile{
+        padding-bottom: 2%;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        /* text-align: center; */
+        position: fixed;
+        top: 0;
+        /* font-size:0.7em ; */
+        font-size: 60%;
+    }
+    #nav_page_tab_mobile a{
+        margin: 0 0.8em;
+    }
+    #top{
+        margin-top: 2em;
+    }
+
+    #dashboard{
+        margin-left: 0px;
+        width: 100%;
+        border-radius: 2px;
+    }
+    #dashboard_data{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #dashboard_data p{
+        font-size: 1em;
+    }
+    .data_card1,
+    .data_card2,
+    .data_card3,
+    .data_card4{
+        width: 100%;
+}
+
+    .user_table{
+        width: 100%;
+         margin-left: 0px;
+        /* margin-right: 0.5em; */
+    }
+
+    .user_table table{
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 0.2em;
+    }
+    #schedule_meeting{
+        margin: 0px;
+        width: 100%;
+    }
+    #meeting_heading p{
+        margin-right: 1.5em;
+        text-align: center;
+    }
+
+    #meeting_heading h1{
+        font-size: 1.5em;
+    }
+
+    #meeting_content h2 {
+        font-size: 0.8em;
+    }
+
+     h1{
+        font-size: 1.5em;
+    }
+
+    #contact_details_content{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+        justify-items: center;
+        width: 100%;
+    }
+
+    #contact_details_map{
+        margin: 0px;
+        width: 90%;
+        border-radius: 0.3em;
+        margin-bottom: 1em;
+    }
+
+    #content_details_feedback{
+        margin: 0px;
+        width: 90%;
+        border-radius: 0.3em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+    #socials{
+        margin: 0px;
+        width:100%;
+        height: auto;
+    }
+
+    #socials p{
+        font-size: 0.5em;
+    }
+}

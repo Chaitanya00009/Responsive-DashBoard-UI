@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- for font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Short+Stack&display=swap" rel="stylesheet">
+    <!--end  -->
+    <!-- dashboard font family start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Short+Stack&family=Syne+Mono&display=swap" rel="stylesheet">
+
+     <!-- end -->
+</head>
+<body>
+  <div id="dashboard_application">
+    <header>
+        <!-- This is for the side dashboard -->
+        <div id="navigation_page">
+           
+            <!-- This is to add the user image in the dashboard  -->
+            <div id="user_pic">
+                <div id="user_image">
+                    <img src="./Dashboard_Media/user.webp" alt="Passport pic">
+                </div>
+
+                <div class="text">
+                    <h3>LUFFY</h3>
+                </div>
+            </div>
+
+            <!-- Adding the dashboard icon and the link for that -->
+            <div id="menu" >
+                <a href="#main">
+                    <div class="icon" >
+                        <i class="fa-solid fa-list-ul"></i>
+                    </div>
+                    <div class="text">
+                        DASHBOARD
+                    </div>
+                </a>
+
+                <!-- <div class="text">
+                    <a href="">DASHBOARD</a>
+                </div> -->
+            </div>
+
+            <!-- Data icon and text -->
+            <div id="tag">
+                <a href="#dashboard_data_head" >
+                    <div class="icon">
+                        <span class="material-symbols-outlined">sell </span>
+                    </div>
+                    <div class="text">
+                        DATA
+                    </div>
+                </a>
+
+                <!-- <div class="text">
+                    <a href="">DATA</a>
+                </div> -->
+            </div>
+
+            <!-- user icon and text -->
+             <div id="user">
+                <a href="#user_interactions">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="text">
+                        USER
+                    </div>
+                </a>
+
+                <!-- <div class="text">
+                    <a href="">USER</a>
+                </div> -->
+             </div>
+
+             <!-- schedule icon and text -->
+              <div id="schedule">
+                <a href="#schedule_meeting" style="scroll-padding-top: 500px;">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                    </div>
+                    <div class="text">
+                        SCHEDULE
+                    </div>
+                </a>
+
+                <!-- <div class="text">
+                    <a href="">SCHEDULE</a>
+                </div> -->
+              </div>
+
+              <!-- contact icon and text -->
+              <div id="contact">
+                <a href="#contact_details">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">settings</span>
+                    </div>
+                    <div class="text">
+                        CONTACT
+                    </div>
+                </a>
+
+                <!-- <div class="text">
+                    <a href="">CONTACT</a>
+                </div> -->
+              </div>
+        </div>
+
+        <div id="nav_page_tab_mobile">
+
+            <div id="links">
+            <a href="#main">DASHBOARD</a>
+            <a href="#dashboard_data_head">DATA</a>
+            <a href="#user_interactions">USER</a>
+            <a href="#schedule_meeting">SCHEDULE</a>
+            <a href="#contact_details">CONTACT</a>
+            </div>
+            <div id="usr">
+                <img src="./Dashboard_Media/user.webp" alt="Passport pic">
+                <p>LUFFY</p>
+            </div>
+
+        </div>
+    </header>
+    <body>
+        <div id="main">
+            <!-- Dashboard heading section -->
+            <div id="top">
+                <div id="main_page">
+                    <h1><span class="large-letter">D</span>ash<span class="large-letter">B</span>oard</h1>
+                </div>
+                <div id="search_bar">
+                    <input type="text" placeholder="Search..." name="searches" id="search">
+                </div>
+            </div>
+
+
+
+            <!-- Dashboard activities -->
+             <div id="dashboard">
+                <div id="dashboard_content">
+                    <h2>ACTIVITIES</h2>
+                    <h4>APR - JULY 2024</h4>
+                </div>
+                <div id="dashboard_graph">
+                    <img src="./Dashboard_Media/graph_edit.png" alt="">
+                </div>
+             </div>
+             <h2 id="dashboard_data_head" style="text-align: center; margin-top: 50px; font-family: 'short stack'; letter-spacing: -1px;text-decoration: underline; text-underline-offset: 5px;"><span class="largest-letter">D</span>ASHBOARD <span class="largest-letter">D</span>ATA</h2>
+             <div id="dashboard_data">
+                
+                <div class="data_card1">
+                    <div class="data_icon">
+                    <span class="material-symbols-outlined">attach_money</span>
+                    </div>
+                    <p>Total Revenue</p>
+                    <p>$ 456,553,563</p>
+                </div>
+
+                <div class="data_card2">
+                    <div class="data_icon">
+                        <span class="material-symbols-outlined">sell</span>
+                    </div>
+                    <p>Total Transaction</p>
+                    <p>1,450</p>
+                </div>
+
+                <div class="data_card3">
+                    <div class="data_icon">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                    </div>
+                    <p>Total Likes</p>
+                    <p>1,234</p>
+                </div>
+
+                <div class="data_card4">
+                    <div class="data_icon">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <p>Total User</p>
+                    <p>856</p>
+                </div>
+                
+             </div>
+
+             <div id="user_interactions">
+                <div class="interaction_heading">
+                    <h2 style=" text-decoration: underline; text-align: center;text-underline-offset: 5px;"><span class="largest-letter">U</span>SER <span class="largest-letter">I</span>NTERACTIONS</h2>
+                </div>
+                <div class="user_table">
+                    <table >
+                        <tr>
+                            <th>Month</th>
+                            <th>Number of Users</th>
+                        </tr>
+                        <tr>
+                            <td>January</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>April</td>
+                            <td>1250</td>
+                        </tr>
+                        <tr class="bottom_table">
+                            <td>May</td>
+                            <td>1600</td>
+                        </tr>
+                    </table>
+                </div>
+             </div>
+
+             <div id="schedule_meeting">
+                <div id="meeting_heading">
+                    <h1 ><span class="largest-letter" >T</span>ODAY'S <span class="largest-letter">S</span>CHEDULE</h1>
+                    <P>SEE ALL</P>
+
+                </div>
+                <div id="meeting_content">
+                    <div id="meet1">
+                        <div class="meet1_box">
+
+                        </div>
+                        <div class="meet1_content"style="line-height: 10px; font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">H</span>YDERABAD</h2>
+                            <p>14.00 - 15.00</p>
+                            <p>UNDER THE MARINA TRENCH</p>
+                        </div>
+                    </div>
+
+                    <div id="meet2">
+                        <div class="meet2_box">
+
+                        </div>
+                        <div class="meet2_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">I</span>NDIA</h2>
+                            <p>16.00 - 20.00</p>
+                            <p>UNDER THE MOUNT EVEREST</p>
+                        </div>
+                    </div>
+                    
+                    <div id="meet3">
+                        <div class="meet3_box">
+
+                        </div>
+                        <div class="meet3_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">B</span>ANGLORE</h2>
+                            <p>20.00 - 21.00</p>
+                            <p>UNDER THE MARINA PALACE</p>
+                        </div>
+                    </div>
+
+                    <div id="meet4">
+                        <div class="meet4_box">
+
+                        </div>
+                        <div class="meet4_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">S</span>PAIN</h2>
+                            <p>21.00 - 21.30</p>
+                            <p>UNDER THE MARINA</p>
+                        </div>
+                    </div>
+
+                    <div id="meet5">
+                        <div class="meet5_box">
+
+                        </div>
+                        <div class="meet5_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">K</span>ARNATAKA</h2>
+                            <p>21.30 - 22.00</p>
+                            <p>UNDER SUN-LIGHT</p>
+                        </div>
+                    </div>
+
+                    <div id="meet6">
+                        <div class="meet6_box">
+
+                        </div>
+                        <div class="meet6_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">T</span>AMIL</h2>
+                            <p>22.00 - 22.30</p>
+                            <p>UNDER THE MOON-LIGHT</p>
+                        </div>
+                    </div>
+
+                    <div id="meet7">
+                        <div class="meet7_box">
+
+                        </div>
+                        <div class="meet7_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">G</span>OA</h2>
+                            <p>22.30 - 23.00</p>
+                            <p>UNDER THE PACIFIC</p>
+                        </div>
+                    </div>
+
+                    <div id="meet8">
+                        <div class="meet8_box">
+
+                        </div>
+                        <div class="meet8_content" style="line-height: 10px;font-family:georgia;margin-bottom:10px">
+                            <h2 style="margin-top: 5px;"><span class="largest-letter">M</span>EETINGS FROM SUPLIERS OF <span class="largest-letter">D</span>ELHI</h2>
+                            <p>23.00 - 00.00</p>
+                            <p>UNDER THE INDIANA</p>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+             <div id="contact_details">
+
+                <div id="contact_details_heading">
+                    <h1><span class="medium_sized_letter">C</span>ONTACT <span class="medium_sized_letter">D</span>ETAILS</h1>
+                </div>
+
+                <div id="contact_details_content">
+                    <div id="contact_details_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101626.91228449238!2d-115.88640849777165!3d37.25147954681236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b81baaba3e8c81%3A0x970427e38e6237ae!2sArea%2051%2C%20NV%2C%20USA!5e0!3m2!1sen!2sin!4v1731232861688!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div id="content_details_feedback">
+                        <div id="content_details_feedback_heading" style="text-align: center;">
+                            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-decoration: underline;">FEEDBACK</h2>
+                        </div>
+                        <div id="content_details_feedback_content">
+                            <form>
+                                <input type="text" name="for username" placeholder="Your Name" style="line-height: 2.5em; font-family: monospace; letter-spacing: 1px;">
+                                <input type="email" name="email" placeholder="Your Email" style="line-height: 2.5em; font-family: monospace; letter-spacing: 1px;">
+                                <textarea name="feedback" id="feedback" placeholder="Your Feedback" style="line-height: 8em;letter-spacing: 1px;"></textarea>
+                                <button style="line-height: 40px; color: white; font-family: monospace; letter-spacing: 1px;"><b>Submit Feedback</b></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                    
+             </div>
+        
+        
+    </body>
+    <footer>
+        <div id="socials">
+            <div id="socials_img">
+                <a href="https://www.facebook.com/codingninjas?_rdr"><img src="./Dashboard_Media/facebook.png"alt="facebook"></a>
+                <a href="https://x.com/CodingNinjasOff"><img src="./Dashboard_Media/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/coding.ninjas/"><img src="./Dashboard_Media/instagram.png" alt="instagram"></a>
+            </div>
+            <p style="text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;margin-top: -10px; color: white;"> &copy; <span class="large-letter">M</span>y <span class="large-letter">C</span>ompany. <span class="large-letter">A</span>ll <span class="large-letter">R</span>ights <span class="large-letter">R</span>eserved.</p>
+            <!-- <p style="text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; margin-top: -10px;"> &copy; My Company.All Rights Reserved.</p> -->
+
+        </div>
+    </footer>
+    </div>
+</div>
+</body>
+</html>
